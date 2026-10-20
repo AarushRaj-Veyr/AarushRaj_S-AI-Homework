@@ -1,0 +1,21 @@
+Question Title: Execute a Python Script Directly
+
+Question Link:
+https://my.newtonschool.co/playground/code/mepmefz373b4?lecture_hash=t5qc0u6ap8tg
+
+Solution:
+touch hello.py
+echo "#!/usr/bin/env python3" > hello.py
+echo "print('Hello from Python')" >> hello.py
+chmod +x hello.py
+./hello.py
+
+Approach:
+1. I Created a file hello.py.
+2. Then I found out the path for the python script.
+3. Then I echoed the path and the print statement into hello.py
+4. Then I Gave +x permission to hello.py, so that it can run directly.
+5. Then I Ran ./ which lest it execute directly, without calling.
+
+Result:
+The file hello.py can run directly by using ./hello.py so that it can be run from Terminal.
