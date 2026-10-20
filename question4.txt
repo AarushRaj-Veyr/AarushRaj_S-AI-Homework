@@ -1,0 +1,20 @@
+Question Title: Deployment Project Permissions
+
+Question Link:
+https://my.newtonschool.co/playground/code/3wz3wv7c89fo?lecture_hash=vifkrugjcwth
+
+Solution:
+chmod 700 deployment/app/*.py
+chmod 770 deployment/datasets
+chmod 770 deployment/datasets/*
+chmod 644 deployment/docs/OVERVIEW.md
+chmod 755 deployment/bin/*.sh
+
+Approach:
+1. I used chmod outside of directory deployment by writing path for all the directories.
+2. I used The numeric values to write chomd and give Permissions.
+3. I used *.py to write permissions for all python Files.
+4. Similarly I used * and *.sh to bunch files of particular type into one and gave them permissions.
+
+Result:
+The Permissions of all files have changed and Each files permissions are now fixed to required set of values.
