@@ -1,0 +1,27 @@
+Question Title: The Internship Project Setup
+
+Question Link:
+https://my.newtonschool.co/playground/code/5i36axzh7cl2?lecture_hash=mi7y4g3am46y
+
+Solution:
+cd client-app
+git init
+echo "Good Content" >> index.html
+git add index.html
+echo "Noice Content" >> app.js
+git add app.js
+git commit -m "Initial client files"
+git log
+git remote add origin https://github.com/startup/client-app.git
+git remote -v
+git push -u origin main
+
+Approach:
+1. First I went into client-app and initialized git.
+2. Then I added content to app.js and index.html and staged both of them.
+3. Then I commited them with message and I checked the commit with git log.
+4. Then I added a remote repository to the branch and checked with git remote -v.
+5. Finally, I pushed the changes into the remotr Repo.
+
+Result:
+I created a Git repository for the client-app project, added content to index.html and app.js, and committed the changes. Then, I connected it to the GitHub repository and tried to push the files to the main branch.
