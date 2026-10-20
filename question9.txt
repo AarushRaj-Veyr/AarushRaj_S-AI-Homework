@@ -1,0 +1,38 @@
+Question Title: Build Pipeline Directory Tree
+
+Question Link:
+https://my.newtonschool.co/playground/code/r2ui5gw5lhqt?lecture_hash=n9ynhcuvkld8
+
+Solution:
+mkdir -p pipeline
+cd pipeline
+
+mkdir -p stages/build stages/test/unit/integration
+mkdir -p env/staging env/prod
+mkdir -p artifacts/old
+
+touch stages/build/app.py
+touch stages/build/config.json
+echo "Build stage initialized." > stages/build/NOTES.md
+
+touch artifacts/old/build.log
+touch artifacts/old/test.log
+touch artifacts/old/deploy.log
+
+chmod 640 artifacts/old/build.log
+chmod 640 artifacts/old/test.log
+chmod 640 artifacts/old/deploy.log
+
+chmod 750 stages
+chmod 770 artifacts
+chmod 700 env
+
+Approach:
+1. I created the pipeline directory and organized it into stages, env, and artifacts.
+2. Then, I created the build and test folders, along with the staging and production environments.
+3. Then, I added the required files to the build folder and wrote a message in NOTES.md.
+4. Then, I created the log files inside artifacts/old.
+5. Finally, I set the required permissions for the log files and directories to control access.
+
+Result:
+The pipeline folder was created with all the required subfolders and files. I added the build message to NOTES.md, created the log files, and set the permissions for the folders and files as required.
