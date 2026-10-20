@@ -1,0 +1,27 @@
+Question Title: Create a Project Folder Structure
+
+Question Link:
+https://my.newtonschool.co/playground/code/jipp2htnvrww?lecture_hash=v210chxjexei
+
+Solution:
+echo '#!/bin/bash
+mkdir -p service/controllers
+mkdir -p service/models
+mkdir -p service/routes
+mkdir -p service/middleware
+
+echo "API Service" > service/README.md
+echo "console.log(\"Server started\");" > service/server.js' > create-service
+chmod +x create-service
+./create-service
+
+Approach:
+1. First, I located the create-service script.
+2. Then, I added the Bash line at the beginning of the script.
+3. Then, I used mkdir -p to create the required folders.
+4. Then, I added commands to create README.md and server.js with the required content.
+5. Then, I used chmod +x to make the script executable.
+6. Finally, I ran the script using ./create-service to generate the service structure.
+
+Result:
+After fixing the create-service script, I made it executable and ran it successfully. It created the service folder with all the required directories and files. I also added the correct content to README.md and server.js as mentioned in the task.
