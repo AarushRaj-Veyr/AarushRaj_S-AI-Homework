@@ -1,0 +1,26 @@
+Question Title: Advance File Management
+
+Question Link:
+https://my.newtonschool.co/playground/code/4ks5o139cfoh?lecture_hash=v210chxjexei
+
+Solution:
+mkdir project-files
+cd project-files
+touch report.docx summary.docx draft.docx
+cp report.docx report_backup.docx
+mkdir old
+mv draft.docx old
+mv summary.docx final_summary.docx
+cp final_summary.docx old
+rm report_backup.docx
+
+Approach:
+1. First I created a folder named project-files and then I went inside of the folder.
+2. Then I created the three files required for this question.
+3. Then I made a copy of report.docx and renamed it as report_backup.docx.
+4. Then I Created a new directory called as old and in that directory I moved the draft.docx into it.
+5. Then I renamed summary.docx into final_summary.docx and copied the file into old folder.
+6. Then I deleted report_backup.docx.
+
+Result:
+Now the project-files contains report.docx,final_summary.docx and a directory called old, which contains draft.docx and final_summary.docx.
