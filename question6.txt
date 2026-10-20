@@ -1,0 +1,21 @@
+Question Title: Simplify the Compilation Process
+
+Question Link:
+https://my.newtonschool.co/playground/code/9kh4giios2j4?lecture_hash=t5qc0u6ap8tg
+
+Solution:
+touch build.sh
+echo "#!/usr/bin/bash" > build.sh
+echo "gcc hello.c -o hello" >> build.sh
+chmod 754 build.sh
+./build.sh
+
+Approach:
+1. I created the file build.sh.
+2. Then I Added the path of bash into build.sh
+3. Then I added gcc compiler for clang.
+4. Then I Gave it +x permission so that it can run from Terminal.
+5. Then by executing ./build.sh we can get the output directly.
+
+Result:
+The build.sh script was created and executed successfully. It compiled hello.c into an executable file named hello, provided there were no compilation errors. The script permissions were also set to 754.
