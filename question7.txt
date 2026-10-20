@@ -1,0 +1,16 @@
+Question Title:The Missing Project Credentials
+
+Question Link:
+https://my.newtonschool.co/playground/code/7x83ezx6nimm
+
+Solution:
+find EventApp -type f -exec grep -h "DB_PASSWORD" {} + > EventApp/db_password.txt
+
+Approach:
+1. I used find to search for all files inside the EventApp directory.
+2. Then I used grep to find lines containing DB_PASSWORD in those files.
+3. Then I used -h to display the matching lines without their filenames.
+4. Finally I used > EventApp/db_password.txt to save the matching lines into db_password.txt.
+
+Result:
+The files were searched for DB_PASSWORD, and all matching lines were saved in a separate file named db_password.txt for easy access.
